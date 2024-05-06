@@ -32,3 +32,4 @@ Contributions to this repository are welcome! If you have Bash scripts that you'
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the contents of this repository for any purpose.
+ 
