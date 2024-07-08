@@ -11,11 +11,11 @@ mysql -u root -p <<EOF
 # Create the database
 CREATE DATABASE $db_name;
 
-# Create the user and set the password
-CREATE USER '$username'@'localhost' IDENTIFIED BY '$password';
+# Create the user and set the password, allowing connections from any host
+CREATE USER '$username'@'%' IDENTIFIED BY '$password';
 
-# Grant privileges to the user on the database
-GRANT ALL PRIVILEGES ON $db_name.* TO '$username'@'localhost';
+# Grant privileges to the user on the database for any host
+GRANT ALL PRIVILEGES ON $db_name.* TO '$username'@'%';
 
 # Flush privileges
 FLUSH PRIVILEGES;
