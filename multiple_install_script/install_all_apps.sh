@@ -28,15 +28,6 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 # Restart Fail2Ban service
 sudo systemctl restart fail2ban
 
-# Install Docker
-sudo apt install docker.io -y docker-compose -y
-
-# Start Docker service
-sudo systemctl start docker
-
-# Enable Docker service on boot
-sudo systemctl enable docker
-
 # Verify Docker installation
 sudo docker run hello-world
 
